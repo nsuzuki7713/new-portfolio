@@ -2,12 +2,12 @@
   <v-app light>
     <v-content style="padding-top:0px">
       <section>
-        <v-parallax :src="require('@/assets/hero1.jpeg')" height="600">
+        <v-parallax :src="require('@/assets/cover_photo.png')" height="600">
           <v-layout column align-center justify-center class="white--text">
-            <img src="../assets/vuetify.png" alt="Vuetify.js" height="200">
-            <h1 class="white--text mb-2 display-1 text-xs-center">Parallax Template</h1>
-            <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div>
-            <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">Get Started</v-btn>
+            <!-- <img src="../assets/vuetify.png" alt="Vuetify.js" height="200"> -->
+            <h1 class="catch-copy">技術で、日々をもっと楽しく</h1>
+            <!-- <div class="subheading mb-3 text-xs-center">Powered by Vuetify</div> -->
+            <!-- <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">Get Started</v-btn> -->
           </v-layout>
         </v-parallax>
       </section>
@@ -16,8 +16,11 @@
         <v-layout column wrap class="my-5" align-center>
           <v-flex xs12 sm4 class="my-3">
             <div class="text-xs-center">
-              <h2 class="headline">The best way to start developing</h2>
-              <span class="subheading">Cras facilisis mi vitae nunc</span>
+              <h2 class="headline" style="margin-bottom:15px;">このサイトについて</h2>
+              <span class="subheading">このサイトはWebエンジニアである私のポートフォリオです
+                <br>自分のスキルや経歴、アウトプットしたものをまとめています
+                <br>息抜きがてらに見て頂ければ幸いです
+              </span>
             </div>
           </v-flex>
           <v-flex xs12>
@@ -26,46 +29,34 @@
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">color_lens</v-icon>
+                      <v-icon x-large class="icon-font blue--text text--lighten-2">account_box</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Material Design</div>
+                      <div class="headline text-xs-center">自己紹介</div>
                     </v-card-title>
-                    <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
-                    </v-card-text>
+                    <v-card-text>いい感じの文章を書きたい。ページも遷移させる</v-card-text>
                   </v-card>
                 </v-flex>
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">flash_on</v-icon>
+                      <v-icon x-large class="icon-font blue--text text--lighten-2">laptop_mac</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline">Fast development</div>
+                      <div class="headline">技術</div>
                     </v-card-title>
-                    <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
-                    </v-card-text>
+                    <v-card-text>いい感じの文章を書きたい。ページも遷移させる</v-card-text>
                   </v-card>
                 </v-flex>
                 <v-flex xs12 md4>
                   <v-card class="elevation-0 transparent">
                     <v-card-text class="text-xs-center">
-                      <v-icon x-large class="blue--text text--lighten-2">build</v-icon>
+                      <v-icon x-large class="icon-font blue--text text--lighten-2">work</v-icon>
                     </v-card-text>
                     <v-card-title primary-title class="layout justify-center">
-                      <div class="headline text-xs-center">Completely Open Sourced</div>
+                      <div class="headline text-xs-center">職務経歴</div>
                     </v-card-title>
-                    <v-card-text>
-                      Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare.
-                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                      Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
-                    </v-card-text>
+                    <v-card-text>いい感じの文章を書きたい。ページも遷移させる</v-card-text>
                   </v-card>
                 </v-flex>
               </v-layout>
@@ -74,7 +65,7 @@
         </v-layout>
       </section>
 
-      <section>
+      <!-- <section>
         <v-parallax :src="require('@/assets/section.jpg')" height="380">
           <v-layout column align-center justify-center>
             <div
@@ -137,18 +128,11 @@
             </v-flex>
           </v-layout>
         </v-container>
-      </section>
-
+      </section>-->
       <v-footer class="blue darken-2">
         <v-layout row wrap align-center>
           <v-flex xs12>
-            <div class="white--text ml-3">
-              Made with
-              <v-icon class="red--text">favorite</v-icon>by
-              <a class="white--text" href="https://vuetifyjs.com" target="_blank">Vuetify</a>
-              and
-              <a class="white--text" href="https://github.com/vwxyzjn">Costa Huang</a>
-            </div>
+            <div class="white--text ml-3">© 2018 Naoto Suzuki</div>
           </v-flex>
         </v-layout>
       </v-footer>
@@ -165,5 +149,19 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.catch-copy {
+  color: #2d3842;
+  margin-top: 330px;
+  font-size: 32px;
+}
+.icon-font {
+  font-size: 80px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .catch-copy {
+    font-size: 26px;
+  }
+}
 </style>
