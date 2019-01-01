@@ -1,0 +1,11 @@
+@for $i from 1 through 100 {
+  .fs#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
+@for $i from 1 through 100 {
+  .mtop-#{$i} {
+    margin-top: #{$i}px;
+  }
+}

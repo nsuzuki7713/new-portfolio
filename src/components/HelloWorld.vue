@@ -65,6 +65,9 @@
         </v-layout>
       </section>
 
+      <Skill v-if="false"></Skill>
+      <SelfIntroduction v-if="false"></SelfIntroduction>
+      <TimeLines style="width:800px;margin:0 auto;"></TimeLines>
       <!-- <section>
         <v-parallax :src="require('@/assets/section.jpg')" height="380">
           <v-layout column align-center justify-center>
@@ -140,7 +143,15 @@
   </v-app>
 </template>
 <script>
+import TimeLines from './time-lines'
+import SelfIntroduction from './self-introduction.vue'
+import Skill from './skill.vue'
 export default {
+  components: {
+    TimeLines,
+    SelfIntroduction,
+    Skill,
+  },
   data() {
     return {
       title: 'Your Logo',
